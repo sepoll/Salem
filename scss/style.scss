@@ -3,6 +3,7 @@
   font-family: verdana;
 }
 section{
+  padding: 20px;
   background:
   radial-gradient(black 15%, transparent 16%) 0 0,
   radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 5px 5px;
@@ -13,13 +14,13 @@ section{
     display: inline-block;
     text-transform: uppercase;
     font-size: 20px;
-    margin: 10px 0 0 15px;
     font-weight: bold;
   }
   nav{
     margin: 0 auto;
     float: right;
     text-transform: uppercase;
+    font-size: 12px;
     li{
       display: inline-block;
       margin-right: 20px;
@@ -58,9 +59,55 @@ section{
     padding: 20px;
   }
 }
+  .scroll{
+    margin: 0 auto;
+    width: 60px;
+  }
 }
 header{
   border: 1px solid red;
-  height: 2000px;
-
+  background: black;
+  padding: 50px;
+  .comercial_pr{
+    margin-top: 50px;
+    border: 1px solid red;
+    width: 700px;
+    display: inline-block;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 30%;
+      border-bottom: 1px solid magenta;
+      left: 0;
+      top: 48%;
+    }
+    div{
+      h1{
+        font-size: 35px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+      p{
+        color: grey;
+        line-height: 35px;
+        font-family: courier;
+      }
+    }
+    p{
+      margin-top: 50px;
+      color: grey;
+      line-height: 35px;
+    }
+    .video{
+      width: 250px;
+      height: 50px;
+      background: #2B2C35;
+    }
+  }
+  .images{
+    display: inline-block;
+  }
 }
