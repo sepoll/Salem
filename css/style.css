@@ -2,38 +2,38 @@
   box-sizing: border-box;
   font-family: verdana; }
 
-section {
+.title_menu {
   padding: 20px;
   background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 5px 5px;
   background-color: #282828;
   background-size: 5px 5px;
   color: white; }
-  section .logo {
+  .title_menu .logo {
     display: inline-block;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold; }
-  section nav {
+  .title_menu nav {
     margin: 0 auto;
     float: right;
     text-transform: uppercase;
     font-size: 12px; }
-    section nav li {
+    .title_menu nav li {
       display: inline-block;
       margin-right: 20px; }
-      section nav li:hover {
+      .title_menu nav li:hover {
         color: magenta; }
-  section .motto {
+  .title_menu .motto {
     margin: 0 auto;
     width: 550px;
     position: relative; }
-    section .motto h1 {
+    .title_menu .motto h1 {
       text-transform: uppercase;
       font-weight: normal;
       font-size: 40px; }
-      section .motto h1 span {
+      .title_menu .motto h1 span {
         font-weight: bold; }
-    section .motto:after {
+    .title_menu .motto:after {
       content: "";
       position: absolute;
       height: 1px;
@@ -41,13 +41,13 @@ section {
       border-bottom: 1px solid magenta;
       left: 35%;
       top: 125%; }
-  section .motto_description {
+  .title_menu .motto_description {
     margin: 0 auto;
     width: 550px;
     text-align: center; }
-    section .motto_description p {
+    .title_menu .motto_description p {
       padding: 20px; }
-  section .scroll {
+  .title_menu .scroll {
     margin: 0 auto;
     width: 60px; }
 
@@ -83,10 +83,62 @@ header {
       color: grey;
       line-height: 35px; }
     header .comercial_pr .video {
-      width: 250px;
-      height: 50px;
-      background: #2B2C35; }
+      width: 220px;
+      background: #2B2C35;
+      position: relative; }
+      header .comercial_pr .video img {
+        display: inline-block;
+        width: 50px;
+        height: 50px; }
+      header .comercial_pr .video p {
+        display: inline-block;
+        position: absolute;
+        top: -41px; }
+        header .comercial_pr .video p:hover {
+          color: magenta; }
   header .images {
     display: inline-block; }
+
+.our_speciality {
+  border: 1px solid red;
+  background: #0a0a0f;
+  padding: 50px; }
+  .our_speciality .our_speciality_information {
+    width: 600px;
+    border: 1px solid red;
+    display: inline-block;
+    float: left;
+    height: 400px;
+    line-height: 30px; }
+    .our_speciality .our_speciality_information h1 {
+      font-size: 35px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: normal;
+      border-left: 1px solid magenta;
+      padding-left: 5px; }
+    .our_speciality .our_speciality_information .our_speciality_motto {
+      color: grey;
+      font-family: courier; }
+    .our_speciality .our_speciality_information .our_speciality_moreinf {
+      color: grey; }
+  .our_speciality .our_specialities {
+    display: inline-block;
+    width: 650px;
+    border: 1px solid red; }
+    .our_speciality .our_specialities .our_specialities_top div {
+      padding-top: 50px;
+      text-align: center;
+      color: white;
+      height: 200px;
+      width: 200px;
+      display: inline-block; }
+    .our_speciality .our_specialities .our_specialities_bottom div {
+      padding-top: 50px;
+      text-align: center;
+      color: white;
+      height: 200px;
+      width: 200px;
+      display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
