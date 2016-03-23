@@ -1,0 +1,77 @@
+//TODO: ta sekcja powinna być wyśrodkowana na całej stronie bez względu na oddalenie, znaczy jej zawartość
+.our_speciality{
+  // FIXME: delete border
+  border: 1px solid red;
+  background: #0a0a0f;
+  padding: 50px;
+  .our_speciality_main{
+    width: 2000px;
+    margin: 0 auto;
+    .our_speciality_information{
+      width: 900px;
+        // FIXME: delete border
+      border: 1px solid red;
+      display: inline-block;
+      float: left;
+      line-height: 30px;
+      h1{
+        font-size: 55px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: normal;
+        border-left: 1px solid magenta;
+        border-width: 50px;
+        padding-left: 5px;
+      }
+      .our_speciality_motto{
+        color: grey;
+        font-family: courier;
+        font-size: 25px;
+      }
+      .our_speciality_moreinf{
+        color: grey;
+        font-size: 20px;
+      }
+    }
+    .our_specialities{
+      display: inline-block;
+      width: 800px;
+        // FIXME: delete border
+      border: 1px solid red;
+      .our_specialities_top{
+        padding: 15px;
+        //TODO: te divy nie są skończone, brakuje im dodatkowej treści, wartości transparent i animate. dodatkowo powinny być odnośnikami
+        div{
+          padding-top: 50px;
+          text-align: center;
+          text-transform: uppercase;
+          color: white;
+          height: 200px;
+          width: 200px;
+          display: inline-block;
+          margin-left: 25px;
+          &:hover{
+            background: grey;
+          }
+        }
+      }
+      .our_specialities_bottom{
+        padding: 15px;
+        //TODO: te divy nie są skończone, brakuje im dodatkowej treści, wartości transparent i animate. dodatkowo powinny być odnośnikami
+        div{
+          padding-top: 50px;
+          text-align: center;
+          text-transform: uppercase;
+          color: white;
+          height: 200px;
+          width: 200px;
+          display: inline-block;
+          margin-left: 25px;
+          &:hover{
+            background: grey;
+          }
+        }
+      }
+    }
+  }
+}

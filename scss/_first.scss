@@ -1,0 +1,87 @@
+.title_menu{
+  // TODO: background powinien zawierać ten sam kolor, który występuje jako tło 3 sekcji
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 5px 5px;
+  background-color:#282828;
+  background-size:5px 5px;
+  color: white;
+
+  .top_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid red;
+
+    @media all and (max-width: 1080px) {
+      flex-direction: column;
+    }
+
+    .logo{
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: bold;
+      border: 1px solid red;
+      margin: 0;
+    }
+
+    nav{
+      flex: auto;
+      text-transform: uppercase;
+      font-size: 18px;
+      border: 1px solid red;
+      li{
+        float: right;
+        margin-right: 20px;
+        @media all and (max-width: 876px) {
+          flex-direction: column;
+        }
+        &:hover{
+          color: magenta;
+        }
+      }
+    }
+  }
+  .center_desc{
+    display: flex;
+    flex-direction: column;
+    .motto{
+      margin: 0 auto;
+      width: 750px;
+      position: relative;
+      h1{
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 55px;
+      span{
+        font-weight: bold;
+        }
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 30%;
+        border-bottom: 1px solid magenta;
+        left: 35%;
+        top: 125%;
+      }
+    }
+    .motto_description{
+      margin: 0 auto;
+      width: 700px;
+      text-align: center;
+      font-size: 25px;
+      p{
+      padding: 20px;
+      }
+    }
+    .scroll{
+      margin: 0 auto;
+      width: 60px;
+    }
+  }
+
+}
